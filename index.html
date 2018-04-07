@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPS630 Lab 2</title>
+        <link href="lab02.css" rel="stylesheet">
+        <script src="weather.js"></script>
+    </head>
+    <body>
+        <nav>
+        </nav>
+        <main>
+            <section class="navbar">
+                <p>City Name</p>
+                <form onsubmit="return getWeatherData(event)">
+                    <input type="text" name="place" id="place" value="">
+                    <br>
+                    Celcius<input type="radio" name="units" id="c" onchange="changeMetric()" checked="true">
+                    <br>
+                    Farenheit<input type="radio" name="units" id="f" onchange="changeMetric()">
+                    <br>
+                    <input type="submit">
+                </form>
+            </section>
+            <section class="weather-local">
+                <section class="bg">
+                    <p class="day">Today</p>
+                    <p class="location">London, CA</p>
+                    <p class="temp">70°C</p>
+                    <p class="humidity">Humidity: 81%</p>
+                    <p class="wind">Wind: 1.3mps</p>
+                    <hr>
+                    <p class="high">High: 200°C</p>
+                    <p class="low">Low: -1000°C</p>
+                </section>
+            </section>
+            <section class="weather-local">
+                <section class="bg">
+                    <p class="day">Tommorow</p>
+                    <p class="location">London, CA</p>
+                    <br>
+                    <p class="humidity">Humidity: 81%</p>
+                    <p class="wind">Wind: 1.3mps</p>
+                    <hr>
+                    <section class="timeOfDay">
+                        <section class="time">
+                            <p>Morning</p>
+                            <p>17°C</p>
+                            <img src="icon-clouds.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Afternoon</p>
+                            <p>17°C</p>
+                            <img src="icon-clouds.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Evening</p>
+                            <p>17°C</p>
+                            <img src="icon-clouds.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Night</p>
+                            <p>17°C</p>
+                            <img src="icon-clouds.png" height="50" width="50" alt="icon">
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="weather-local">
+                <section class="bg">
+                    <p class="day">Wednesday</p>
+                    <p class="location">London, CA</p>
+                    <br>
+                    <p class="humidity">Humidity: 81%</p>
+                    <p class="wind">Wind: 1.3mps</p>
+                    <hr>
+                    <section class="timeOfDay">
+                        <section class="time">
+                            <p>Morning</p>
+                            <p>17°C</p>
+                            <img src="icon-rain.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Afternoon</p>
+                            <p>17°C</p>
+                            <img src="icon-rain.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Evening</p>
+                            <p>17°C</p>
+                            <img src="icon-rain.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Night</p>
+                            <p>17°C</p>
+                            <img src="icon-rain.png" height="50" width="50" alt="icon">
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="weather-local">
+                <section class="bg">
+                    <p class="day">Thursday</p>
+                    <p class="location">London, CA</p>
+                    <br>
+                    <p class="humidity">Humidity: 81%</p>
+                    <p class="wind">Wind: 1.3mps</p>
+                    <hr>
+                    <section class="timeOfDay">
+                        <section class="time">
+                            <p>Morning</p>
+                            <p>17°C</p>
+                            <img src="icon-clear.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Afternoon</p>
+                            <p>17°C</p>
+                            <img src="icon-clear.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Evening</p>
+                            <p>17°C</p>
+                            <img src="icon-clear.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Night</p>
+                            <p>17°C</p>
+                            <img src="icon-clear.png" height="50" width="50" alt="icon">
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="weather-local">
+                <section class="bg">
+                    <p class="day">Friday</p>
+                    <p class="location">London, CA</p>
+                    <br>
+                    <p class="humidity">Humidity: 81%</p>
+                    <p class="wind">Wind: 1.3mps</p>
+                    <hr>
+                    <section class="timeOfDay">
+                        <section class="time">
+                            <p>Morning</p>
+                            <p>17°C</p>
+                            <img src="icon-snow.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Afternoon</p>
+                            <p>17°C</p>
+                            <img src="icon-thunder.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Evening</p>
+                            <p>17°C</p>
+                            <img src="icon-snow.png" height="50" width="50" alt="icon">
+                        </section>
+                        <section class="time">
+                            <p>Night</p>
+                            <p>17°C</p>
+                            <img src="icon-thunder.png" height="50" width="50" alt="icon">
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
